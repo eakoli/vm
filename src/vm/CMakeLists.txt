@@ -1,0 +1,12 @@
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+PROJECT( vm )
+
+ADD_LIBRARY( vm STATIC
+    vm.h
+    vm_x86.cpp
+)
+
+TARGET_INCLUDE_DIRECTORIES( vm
+    INTERFACE PUBLIC
+        ../
+)
